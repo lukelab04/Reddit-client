@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+
+    --background    : #121212;
+    --s1            : #212121;
+    --s2            : #424242;
+    --s3            : #616161;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Raleway', sans-serif;
+}
+
+.HeadNav {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--s2);
+    align-items: center;
+    gap: 50px;
+    color: white;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.NavBarItem {
+    margin-left: 15px;
+}
+
+.PostList {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Post {
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--s1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+    width: 90%;
+    max-width: 800px;
+}
+
+.PostAuthorSub {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.PostAuthorSubText {
+    font-size: small;
+    margin-left: 10px;
+}
+
+.PostTitle {
+    margin: 10px;
+    align-self: flex-start;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.TextPostBody {
+    margin-left: 10px;
+    align-self: flex-start;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.LinkBodyContainer {
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LinkImage {
+    min-width: 50%;
+    max-width: 90%;
+}
+
+.ImagePostImage {
+    min-width: 50%;
+    max-width: 90%;
+}
+
+.VideoPost {
+    min-width: 50%;
+    max-width: 90%;
+}
+
+.PostFooter {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.PostUpvotes, .PostComments {
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.NavFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.NavButton {
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: var(--s3);
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 150px;
+    max-width: 30%;
+    transition: ease .2s;
+}
+
+.NavButton:hover{
+    background-color: var(--s2);
+}
+
+.VideoLink {
+    color: white;
+}
+
+.CommentParent {
+    display: flex;
+    flex-direction: column;
+}
+
+.CommentList {
+    padding: 15px;
+}
+
+.CommentContainer {
+    background-color: var(--s2);
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--s3);
+}
+
+.CommentAuthScoreContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.CommentBody {
+    word-wrap: break-word;
+    white-space: pre-line;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 750px) {
+    .HeadNav {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .NavBarItem {
+        margin-left: 0;
+    }
+
+    .CommentList {
+        padding: 5px;
+    }
+}
